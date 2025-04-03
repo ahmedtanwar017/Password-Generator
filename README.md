@@ -56,7 +56,7 @@ if __name__ == "__main__":
     # Ask if ambiguous characters should be avoided
     avoid_ambiguous = input("Do you want to avoid ambiguous characters (l, 1, O, 0)? (yes/no): ").lower() == 'yes'
     
-    # Generate the password
+    # Generate a unique password
     try:
         password = generate_password(length, strength, require_minimum_characters, avoid_ambiguous)
         print("Generated Password:", password)
